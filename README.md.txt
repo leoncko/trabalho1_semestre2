@@ -1,0 +1,1 @@
+O objetivo desse projeto é fazer aplicações de rede com sockets para conexões UDP e TCP.
