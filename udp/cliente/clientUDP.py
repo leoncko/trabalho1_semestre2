@@ -15,9 +15,9 @@ while True:
         break
         
     elif acao == 'S':
-        palpite = input("\nFaca sua aposta (jogador, casa ou empate): ").strip().lower()
+        aposta = input("\nFaca sua aposta (jogador, casa ou empate): ").strip().lower()
         
-        client_socket.sendto(palpite.encode('utf-8'), (SERVER_HOST, SERVER_PORT))
+        client_socket.sendto(aposta.encode('utf-8'), (SERVER_HOST, SERVER_PORT))
 
         response, server_address = client_socket.recvfrom(2048)
         print(f"\nResultado: {response.decode('utf-8')}")
